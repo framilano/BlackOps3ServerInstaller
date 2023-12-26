@@ -41,4 +41,4 @@ zone/zm_zod_patch.ff
 3. Remember to change the port in `BOIII_XX_Server.bat` if you're launching the server in the same machine where you're playing Black Ops 3.
 4. To save space, you can delete any unused fast file in `UnrankedServer/zone`
 5. **(For Custom Clients like BOIII)** To customise your server maps rotation and gamemodes just edit the files in `UnrankedServer/zone`, `server_zm.cfg` changes zombies configuration, `server_mp.cfg` changes multiplayer configurations, `server.cfg` changes coop campaign configuration.
-These files can be executed even with the vanilla `Launch_Server.bat` but you need to edit to execute the desired cfg file.
+These files can be executed even with the vanilla `Launch_Server.bat` but you need to edit it first to execute the desired cfg file.
