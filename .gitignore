@@ -1,0 +1,8 @@
+*.ff
+*.fd
+*.exe
+*.dll
+*.bmp
+*.info
+UnrankedServer/copydedicated.bat
+UnrankedServer/Launch_Server.bat

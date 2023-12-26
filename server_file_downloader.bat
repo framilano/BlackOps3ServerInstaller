@@ -18,8 +18,8 @@ rd /s /q steamcmd
 
 ::deleting unecessary files
 cd UnrankedServer
-del copydedicated.bat
-del Launch_Server.bat
+::del copydedicated.bat
+::del Launch_Server.bat
 
 ::downloading latest t7/boiii/bo3 client
 curl -L "%BoiiiUrl%" -o boiii.exe
