@@ -10,7 +10,7 @@ sudo mkdir -pm755 /etc/apt/keyrings
 sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
 sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
 sudo apt update
-sudo apt install --install-recommends winehq-staging
+sudo apt install --install-recommends winehq-staging -y
 
 #Downloading latest t7/boiii/bo3 client
 cd UnrankedServer
