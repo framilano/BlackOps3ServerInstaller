@@ -1,13 +1,6 @@
 SteamcmdUrl="https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip"
 BoiiiUrl="https://github.com/Ezz-lol/boiii-free/releases/latest/download/boiii.exe"
 
-#Retrieves SteamCMD
-curl -s %SteamcmdUrl -o steamcmd.zip
-mkdir steamcmd
-mv steamcmd.zip steamcmd
-cd steamcmd
-tar -xf steamcmd.zip
-
 #Downloading server files
 steamcmd +force_install_dir .. +login anonymous +app_update 545990 validate +quit
 
