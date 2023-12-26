@@ -2,15 +2,14 @@
 
 Simplifying BO3 server installation for both vanilla versions and unofficial clients. No copyrighted files are distributed using this script.
 This repository merges configurations and scripts from these projects:
-
 [EZZ BOIII](https://github.com/Ezz-lol/boiii-free) (currently the best custom client) \
 [T7 Configuration files](https://github.com/Dss0/t7-server-config)
 
 ## How to install
 1. Clone this repository wherever you want to install the server
 2. Double click on `server_files_downloader.bat`
-3. Wait for server files to download through steamcmd
-4. Wait for the custom client latest executable to download
+3. Wait for server files to download through [steamcmd](https://developer.valvesoftware.com/wiki/SteamCMD)
+4. Wait for the custom client latest executable to download  (currently [EZZ BOIII](https://forum.ezz.lol/category/7/boiii))
 5. **(For Custom Clients like BOIII)** Launch your server using `BOIII_XX_Server.bat`
 6. **(For official servers on vanilla BO3)** Launch your server using `Launch_Server.bat`
 5. Done!
