@@ -8,7 +8,7 @@ This repository merges configurations and scripts from these projects:
 
 ## How to install
 1. Clone this repository wherever you want to install the server
-2. Double click on `server_file_downloader.bat`
+2. Double click on `server_files_downloader.bat`
 3. Wait for server files to download through steamcmd
 4. Wait for the custom client latest executable to download
 5. **(For Custom Clients like BOIII)** Launch your server using `BOIII_XX_Server.bat`
