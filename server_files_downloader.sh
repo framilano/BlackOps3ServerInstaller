@@ -1,4 +1,3 @@
-SteamcmdUrl="https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip"
 BoiiiUrl="https://github.com/Ezz-lol/boiii-free/releases/latest/download/boiii.exe"
 
 cd UnrankedServer

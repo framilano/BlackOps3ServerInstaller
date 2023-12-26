@@ -1,6 +1,6 @@
 @echo off
 ::///////////////////////////////////////////////////////////////////////
-::///  	      BOIII Dedicated Server Configuration start-up file        ///
+::///  	      BOIII Dedicated Server Configuration start-up file      ///
 ::///////////////////////////////////////////////////////////////////////
 :://                                                                   //
 :://                    Your Game Server Port.	       	       	       //
@@ -21,16 +21,18 @@ set GamePort=27017
 
 set ModFolderName=
 
-::///////////////////////////////////////////////////////////////////////
-::// 	Your edited server.cfg in the "zone" folder goes here...       //
-:://	This is were you edit your hostname, rcon, inactivity, etc     //
-:://                          (Optional)                               //
-::///////////////////////////////////////////////////////////////////////
+:://///////////////////////////////////////////////////////////////////////
+::// 	Your edited server.cfg in the "zone" folder goes here...         //
+:://	This is were you edit your hostname, rcon, inactivity, etc       //
+:://                          (Optional)                                 //
+::// Use server.cfg for MP, server_zm.cfg for Zombies and server_cp.cfg  //
+:://                     for the campaign coop                           //     
+:://///////////////////////////////////////////////////////////////////////
 
-set ServerFilename=server.cfg
+set ServerFilename=server_mp.cfg
 
 ::///////////////////////////////////////////////////////////////////////
 :://DONE!! WARNING! Don't mess with anything below this line. SERIOUSLY!//
 ::///////////////////////////////////////////////////////////////////////
 
-start boiii.exe -dedicated -headless +set fs_game "%ModFolderName%" +set net_port "%GamePort%" +set logfile 2 +exec %ServerFilename%
+start boiii.exe -dedicated -headless +set fs_game "%ModFolderName%" +set net_port "%GamePort%"  +set logfile 2 +exec %ServerFilename%
