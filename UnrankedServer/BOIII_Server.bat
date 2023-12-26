@@ -29,7 +29,7 @@ set ModFolderName=
 :://                     for the campaign coop                           //     
 :://///////////////////////////////////////////////////////////////////////
 
-set ServerFilename=server_mp.cfg
+set ServerFilename=server.cfg
 
 ::///////////////////////////////////////////////////////////////////////
 :://DONE!! WARNING! Don't mess with anything below this line. SERIOUSLY!//

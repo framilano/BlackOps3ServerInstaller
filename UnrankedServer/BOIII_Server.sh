@@ -28,7 +28,7 @@ ModFolderName=
 #//                     for the campaign coop                           //     
 #/////////////////////////////////////////////////////////////////////////
 
-ServerFilename=server_mp.cfg
+ServerFilename=server.cfg
 
 #///////////////////////////////////////////////////////////////////////
 #//DONE!! WARNING! Don't mess with anything below this line. SERIOUSLY!//
