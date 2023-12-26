@@ -30,7 +30,7 @@ set ModFolderName=
 set ServerFilename=server.cfg
 
 ::///////////////////////////////////////////////////////////////////////
-:://DONE!! WARNING! Don't mess with anything below this line. SEROUSLY!//
+:://DONE!! WARNING! Don't mess with anything below this line. SERIOUSLY!//
 ::///////////////////////////////////////////////////////////////////////
 
-start boiii.exe -dedicated +set fs_game "%ModFolderName%" +set net_port "%GamePort%" +set logfile 2 +exec %ServerFilename%
+start boiii.exe -dedicated -headless +set fs_game "%ModFolderName%" +set net_port "%GamePort%" +set logfile 2 +exec %ServerFilename%
