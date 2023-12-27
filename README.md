@@ -12,11 +12,10 @@ This repository merges configurations and scripts from these projects:\
 ##### Table of Contents  
 - [How to install (Windows)](#how-to-install-windows)
 - [How to install (Linux)](#how-to-install-linux)
-  - [Requirements](#headers)
-  - [Instructions](#headers)
-- [Cool, but Zombies?](#headers)
-- [Notes](#headers)
-<a name="headers"/>
+  - [Requirements](#requirements)
+  - [Instructions](#instructions)
+- [Cool, but Zombies?](#cool-but-zombies)
+- [Notes](#notes)
 
 ## How to install (Windows)
 1. Clone this repository wherever you want to install the server
