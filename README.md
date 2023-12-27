@@ -39,9 +39,10 @@ zone/zm_zod_patch.ff
 ```
 
 ## Linux Compatibility
-Official BO3 servers only aimed for Windows support, but [Wine](https://www.winehq.org/) can help us run it on Linux too. Sadly, steamcmd can't download directly BO3 Server files due to compatibility reasons. The setup process is different, but it works.
+Official BO3 servers only aimed for Windows support, but [Wine](https://www.winehq.org/) can help us run it on Linux too. Sadly, steamcmd can't download directly BO3 Server files due to compatibility reasons, that translates into a different setup process.
+
 ### Requirements
-- I assume for this guide that you're using an Ubuntu-based platform, I tested it on Ubuntu 22.04
+- I assume for this guide that you're using an Ubuntu-based platform, I tested it on Ubuntu Server 22.04, you don't need a Desktop Environment or any GUI for this server to work!
 - Git and Wget installed on your machine
 - Black Ops 3 server files downloaded on a Windows machine using `server_files_downloader.bat`
 
