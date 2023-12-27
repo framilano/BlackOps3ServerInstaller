@@ -9,7 +9,7 @@ This repository merges configurations and scripts from these projects:\
 
 **You can create servers on both Linux-based platforms and Windows.**
 
-##### Table of Contents  
+## Table of Contents  
 - [How to install (Windows)](#how-to-install-windows)
 - [How to install (Linux)](#how-to-install-linux)
   - [Requirements](#requirements)
