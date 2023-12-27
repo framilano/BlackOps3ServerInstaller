@@ -57,7 +57,7 @@ Official BO3 servers only aimed for Windows support, but [Wine](https://www.wine
 ## Notes
 1. Unless you're playing LAN with friends, you need to port forward you router and open the ports used by your server in Windows Firewall.
 2. If you don't need any custom client, just delete `boiii.exe`.
-3. Remember to change the port in `BOIII_XX_Server.bat` if you're launching the server in the same machine where you're playing Black Ops 3.
-4. To save space, you can delete any unused fast file in `UnrankedServer/zone`
+3. Remember to change the port in `BOIII_Server.bat` if you're launching the server in the same machine where you're playing Black Ops 3.
+4. To save space, you can delete any unused fast files in `UnrankedServer/zone`
 5. **(For Custom Clients like BOIII)** To customise your server maps rotation and gamemodes just edit the files in `UnrankedServer/zone`, `server_zm.cfg` changes zombies configuration, `server.cfg` changes multiplayer configurations, `server_cp.cfg` changes coop campaign configuration.
 These files can be executed even with the vanilla `Launch_Server.bat` but you need to edit it first to execute the desired cfg file.
