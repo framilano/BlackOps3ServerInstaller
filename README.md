@@ -33,6 +33,7 @@ Let's say you want to create a Shadows of Evil server, you need to copy these fa
 zone/en_zm_zod.ff
 zone/en_zm_zod_patch.ff
 zone/zm_zod.ff
+zone/zm_zod.fd
 zone/zm_zod_patch.ff
 ```
 
