@@ -6,6 +6,7 @@ Simplifying BO3 server installation for both vanilla versions and unofficial cli
 This repository merges configurations and scripts from these projects:\
 [EZZ BOIII](https://github.com/Ezz-lol/boiii-free) (currently the best custom client) \
 [T7 Configuration files](https://github.com/Dss0/t7-server-config)
+[BOIIIEasyServer](https://github.com/rcv11x/BOIIIEasyServer)
 
 **You can create servers on both Linux-based platforms and Windows.**
 
