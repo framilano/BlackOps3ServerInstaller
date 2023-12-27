@@ -9,6 +9,15 @@ This repository merges configurations and scripts from these projects:\
 
 **You can create servers on both Linux-based platforms and Windows.**
 
+##### Table of Contents  
+- [How to install (Windows)](#how-to-install-windows)
+- [How to install (Linux)](#how-to-install-linux)
+  - [Requirements](#headers)
+  - [Instructions](#headers)
+- [Cool, but Zombies?](#headers)
+- [Notes](#headers)
+<a name="headers"/>
+
 ## How to install (Windows)
 1. Clone this repository wherever you want to install the server
 2. Double click on `server_files_downloader.bat`
@@ -18,6 +27,22 @@ This repository merges configurations and scripts from these projects:\
 6. **(For Custom Clients like BOIII)** Launch your server using `BOIII_Server.bat`
 7. **(For official servers on vanilla BO3)** Launch your server using `Launch_Server.bat`
 5. Done!
+
+## How to install (Linux)
+Official BO3 servers only aimed for Windows support, but [Wine](https://www.winehq.org/) can help us run it on Linux too. Sadly, steamcmd can't download directly BO3 Server files due to compatibility reasons, that translates into a different setup process.
+
+### Requirements
+- I assume for this guide that you're using an Ubuntu-based platform, I tested it on Ubuntu Server 22.04, you don't need a Desktop Environment or any GUI for this server to work!
+- Git and Wget installed on your machine
+- Black Ops 3 server files downloaded on a Windows machine using `server_files_downloader.bat`
+
+### Instructions
+1. **[On Linux]** Clone this repo wherever you want to put your server
+2. **[On Linux]** Make `ubuntu_dependencies.sh` executable using `chmod +x` and run it, this will install Wine Staging and place the latest custom client (boiii) inside the `UnrankedServer` folder
+4. **[From Windows to Linux]** Move the content of the `UnrankedServer` folder downloaded using `server_files_downloader.bat` to the `UnrankedServer` on your Linux machine.
+5. **[On Linux]** Make `BOIII_Server.sh` executable using `chmod +x`
+6. **[On Linux]** Edit your `BOIII_Server.sh` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
+7. Done! You can launch your server executing `BOIII_Server.sh`
 
 ## Cool, but Zombies?
 The default server files only download MP-ready stuff. To serve a Zombies server you need to copy these fast files
@@ -39,22 +64,6 @@ zone/zm_zod.ff
 zone/zm_zod.fd
 zone/zm_zod_patch.ff
 ```
-
-## How to install (Linux)
-Official BO3 servers only aimed for Windows support, but [Wine](https://www.winehq.org/) can help us run it on Linux too. Sadly, steamcmd can't download directly BO3 Server files due to compatibility reasons, that translates into a different setup process.
-
-### Requirements
-- I assume for this guide that you're using an Ubuntu-based platform, I tested it on Ubuntu Server 22.04, you don't need a Desktop Environment or any GUI for this server to work!
-- Git and Wget installed on your machine
-- Black Ops 3 server files downloaded on a Windows machine using `server_files_downloader.bat`
-
-### Instructions
-1. **[On Linux]** Clone this repo wherever you want to put your server
-2. **[On Linux]** Make `ubuntu_dependencies.sh` executable using `chmod +x` and run it, this will install Wine Staging and place the latest custom client (boiii) inside the `UnrankedServer` folder
-4. **[From Windows to Linux]** Move the content of the `UnrankedServer` folder downloaded using `server_files_downloader.bat` to the `UnrankedServer` on your Linux machine.
-5. **[On Linux]** Make `BOIII_Server.sh` executable using `chmod +x`
-6. **[On Linux]** Edit your `BOIII_Server.sh` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
-7. Done! You can launch your server executing `BOIII_Server.sh`
 
 ## Notes
 1. Unless you're playing LAN with friends, you need to port forward you router and open the ports used by your server in Windows Firewall.
