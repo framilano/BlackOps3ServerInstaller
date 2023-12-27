@@ -1,7 +1,7 @@
 # BlackOps3ServerInstaller
 
 Simplifying BO3 server installation for both vanilla versions and unofficial clients. \
-**No copyrighted files are distributed using this script.** \
+**No copyrighted files are distributed using these scripts.** \
 \
 This repository merges configurations and scripts from these projects:\
 [EZZ BOIII](https://github.com/Ezz-lol/boiii-free) (currently the best custom client) \
