@@ -1,6 +1,6 @@
 # BlackOps3ServerInstaller
 
-Simplifying BO3 server installation for both vanilla versions and unofficial clients. \
+Simplifying BO3 server installation for both vanilla BO3 and unofficial clients (like BOIII). \
 **No copyrighted files are distributed using these scripts.** \
 \
 This repository merges configurations and scripts from these projects:\
