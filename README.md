@@ -7,7 +7,9 @@ This repository merges configurations and scripts from these projects:\
 [EZZ BOIII](https://github.com/Ezz-lol/boiii-free) (currently the best custom client) \
 [T7 Configuration files](https://github.com/Dss0/t7-server-config)
 
-## How to install
+**You can create servers on both Linux-based platforms and Windows.**
+
+## How to install (Windows)
 1. Clone this repository wherever you want to install the server
 2. Double click on `server_files_downloader.bat`
 3. Wait for server files to download through [steamcmd](https://developer.valvesoftware.com/wiki/SteamCMD)
@@ -38,7 +40,7 @@ zone/zm_zod.fd
 zone/zm_zod_patch.ff
 ```
 
-## Linux Compatibility
+## How to install (Linux)
 Official BO3 servers only aimed for Windows support, but [Wine](https://www.winehq.org/) can help us run it on Linux too. Sadly, steamcmd can't download directly BO3 Server files due to compatibility reasons, that translates into a different setup process.
 
 ### Requirements
