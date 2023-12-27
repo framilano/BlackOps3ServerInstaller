@@ -50,8 +50,7 @@ Official BO3 servers only aimed for Windows support, but [Wine](https://www.wine
 
 ### Instructions
 1. **[On Linux]** Clone this repo wherever you want to put your server
-2. **[On Linux]** Make `ubuntu_dependencies.sh` executable using `chmod +x` and run it
-3. **[On Linux]** This will install Wine Staging and place the latest custom client (boiii) inside the `UnrankedServer` folder
+2. **[On Linux]** Make `ubuntu_dependencies.sh` executable using `chmod +x` and run it, this will install Wine Staging and place the latest custom client (boiii) inside the `UnrankedServer` folder
 4. **[From Windows to Linux]** Move the content of the `UnrankedServer` folder downloaded using `server_files_downloader.bat` to the `UnrankedServer` on your Linux machine.
 5. **[On Linux]** Make `BOIII_Server.sh` executable using `chmod +x`
 6. **[On Linux]** Edit your `BOIII_Server.sh` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
