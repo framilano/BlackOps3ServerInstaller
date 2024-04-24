@@ -27,4 +27,4 @@ ServerFilename=server.cfg
 #///////////////////////////////////////////////////////////////////////
 #//DONE!! WARNING! Don't mess with anything below this line. SERIOUSLY!//
 #///////////////////////////////////////////////////////////////////////
-wine boiii.exe -dedicated -headless +set fs_game "$ModFolderName" +set net_port "$GamePort" +set logfile 2 +exec $ServerFilename
+wine boiii.exe -headless +set fs_game "$ModFolderName" +set net_port "$GamePort" +set logfile 2 +exec $ServerFilename
