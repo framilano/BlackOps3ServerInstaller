@@ -60,7 +60,7 @@ zone/zm_zod_patch.ff
 
 ## Mods?
 There's a difference between Custom Maps and Mods, this section will specify on how to load a mod downloaded from the Steam Workshop.
-Let's say you subscribed to the [The Kermit Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=1638465081), this will create a folder in your Steam folder in `steamapps/workshop/content/311210/1638465081`, create a new `mods` folder inside your BO3 Server installation folder and simply copy the folder named `1638465081` (this number changes depending on the mod) inside it. It should look like this:
+Let's say you subscribed to the [The Kermit Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=1638465081), this will create a folder in your Steam folder in `steamapps/workshop/content/311210/1638465081`, create a new `mods` folder inside your BO3 Server installation folder and simply copy the folder named `1638465081` (this number changes depending on the mod) inside it. The resulting folders structure should look like this:
 
 ![immagine](https://github.com/user-attachments/assets/23843aca-0bd8-4dbc-8cfe-8dba4eba12c0)
 
