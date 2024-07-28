@@ -13,13 +13,13 @@ set GamePort=27017
 ::// Below edits are optional unless you run multiable servers or mods.//
 ::///////////////////////////////////////////////////////////////////////
 :://               Load a mod on your server                           //
-:://	           Example: ModfolderName=mods/bots                    //
+:://	           Example: ModIdNumber=<mod_id_here>                    //
 :://                                                                   //
 :://               UNLOAD a mod on your server                         //
-:://               Example: ModfolderName=                             //
+:://               Example: ModIdNumber=                               //
 ::///////////////////////////////////////////////////////////////////////
 
-set ModFolderName=
+set ModIdNumber=
 
 :://///////////////////////////////////////////////////////////////////////
 ::// 	Your edited server.cfg in the "zone" folder goes here...         //
@@ -35,4 +35,4 @@ set ServerFilename=server.cfg
 :://DONE!! WARNING! Don't mess with anything below this line. SERIOUSLY!//
 ::///////////////////////////////////////////////////////////////////////
 
-start boiii.exe -headless +set fs_game "%ModFolderName%" +set net_port "%GamePort%"  +set logfile 2 +exec %ServerFilename%
+start boiii.exe -headless +set fs_game "%ModIdNumber%" +set net_port "%GamePort%"  +set logfile 2 +exec %ServerFilename%
