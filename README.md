@@ -12,8 +12,9 @@ This repository merges configurations and scripts from these projects:\
 
 ## Table of Contents  
 - [How to install (Windows)](#how-to-install-windows)
-- [How to install (Linux, tested on Ubuntu 22.04)](#how-to-install-linux)
+- [How to install (Linux, tested on Ubuntu 24.04)](#how-to-install-linux)
 - [Cool, but Zombies?](#cool-but-zombies)
+- [Mods?](#mods)
 - [Notes](#notes)
 
 ## How to install (Windows)
@@ -26,7 +27,7 @@ This repository merges configurations and scripts from these projects:\
 7. **(For official servers on vanilla BO3)** Launch your server using `Launch_Server.bat`
 5. Done!
 
-## How to install (Linux, tested on Ubuntu 22.04)
+## How to install (Linux, tested on Ubuntu 24.04)
 Official BO3 servers only aimed for Windows support, but [Wine](https://www.winehq.org/) can help us run it on Linux too.
 1. Clone this repository wherever you want to install the server
 2. Make `server_files_downloader.sh` executable using `chmod +x` and execute it with `./server_files_downloader.sh`
