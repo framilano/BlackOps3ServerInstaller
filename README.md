@@ -12,7 +12,7 @@ This repository merges configurations and scripts from these projects:\
 
 ## Table of Contents  
 - [How to install (Windows)](#how-to-install-windows)
-- [How to install (Linux, tested on Ubuntu 24.04)](#how-to-install-linux)
+- [How to install (Linux)](#how-to-install-linux)
 - [Cool, but Zombies?](#cool-but-zombies)
 - [Mods?](#mods)
 - [Notes](#notes)
@@ -27,10 +27,10 @@ This repository merges configurations and scripts from these projects:\
 7. **(For official servers on vanilla BO3)** Launch your server using `Launch_Server.bat`
 5. Done!
 
-## How to install on Linux, tested on Ubuntu LTS (24.04) and Debian Stable (12)
+## How to install on Linux (Ubuntu, Debian, Arch)
 Official BO3 servers only aimed for Windows support, but [Wine](https://www.winehq.org/) can help us run it on Linux too.
 1. Clone this repository wherever you want to install the server
-2. Make `server_files_downloader.sh` executable using `chmod +x` and execute it with `./server_files_downloader.sh ubuntu` (note, I currently support `ubuntu` and `debian`, so just write `debian` if you're on `debian`)
+2. Make `server_files_downloader.sh` executable using `chmod +x` and execute it with `./server_files_downloader.sh ubuntu` (note, I currently support `ubuntu` and `debian` and `arch`). Example, if you're on arch just type `server_files_downloader.sh arch`
 3. Follow the setup "wizard" and confirm a bunch of wine required steps. Wait for server files to download through [steamcmd](https://developer.valvesoftware.com/wiki/SteamCMD)
 4. Wait for the custom client latest executable to download  (currently [T7X](https://forum.alterware.dev/t/how-to-install-the-t7x-client/1418/2))
 5. **(For Custom Clients)** Make `T7X_Server.sh` executable using `chmod +x`. Edit your `T7X_Server.sh` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
