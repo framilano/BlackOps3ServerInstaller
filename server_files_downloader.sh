@@ -38,15 +38,16 @@ if [ "$1" == "arch" ]; then
     #Updating stuff
     sudo pacman -Syu
 
-    #Install curl and wget
-    sudo pacman -Sy curl wget base-devel libunwind
+    #Install necessary tools
+    sudo pacman -Sy curl wget base-devel libunwind --needed
 
     #WINE Stuff
-    sudo pacman -Sy wine-staging
+    sudo pacman -Sy wine-staging --needed
     #Retrieves SteamCMD and build SteamCMD
     git clone https://aur.archlinux.org/steamcmd.git
     cd steamcmd
     makepkg -si
+    cd ..
 fi
 
 
