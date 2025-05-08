@@ -22,8 +22,8 @@ This repository merges configurations and scripts from these projects:\
 2. Double click on `server_files_downloader.bat`
 3. Wait for server files to download through [steamcmd](https://developer.valvesoftware.com/wiki/SteamCMD)
 4. Wait for the custom client latest executable to download  (currently [T7X](https://forum.alterware.dev/t/how-to-install-the-t7x-client/1418/2))
-5. **(For Custom Clients like T7X)** You can now edit `T7X_Server.bat` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
-6. **(For Custom Clients like T7X)** Launch your server using `T7X_Server.bat`
+5. **(For Custom Clients)** You can now edit `T7X_Server.bat` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
+6. **(For Custom Clients)** Launch your server using `T7X_Server.bat`
 7. **(For official servers on vanilla BO3)** Launch your server using `Launch_Server.bat`
 5. Done!
 
@@ -33,8 +33,8 @@ Official BO3 servers only aimed for Windows support, but [Wine](https://www.wine
 2. Make `server_files_downloader.sh` executable using `chmod +x` and execute it with `./server_files_downloader.sh ubuntu` (note, I currently support `ubuntu` and `debian`, so just write `debian` if you're on `debian`)
 3. Follow the setup "wizard" and confirm a bunch of wine required steps. Wait for server files to download through [steamcmd](https://developer.valvesoftware.com/wiki/SteamCMD)
 4. Wait for the custom client latest executable to download  (currently [T7X](https://forum.alterware.dev/t/how-to-install-the-t7x-client/1418/2))
-5. **(For Custom Clients like T7X)** Make `T7X_Server.sh` executable using `chmod +x`. Edit your `T7X_Server.sh` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
-6. **(For Custom Clients like T7X)** Launch your server using `T7X_Server.sh` (note, inside this script on the `wine` line there's the `-headless` argument that must be used if you don't any graphical interface, do not use it if you have a DE)
+5. **(For Custom Clients)** Make `T7X_Server.sh` executable using `chmod +x`. Edit your `T7X_Server.sh` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
+6. **(For Custom Clients)** Launch your server using `T7X_Server.sh` (note, inside this script on the `wine` line there's the `-headless` argument that must be used if you don't any graphical interface, do not use it if you have a DE)
 7. **(For official servers on vanilla BO3)** Launch your server using `Launch_Server.sh`
 5. Done!
 
