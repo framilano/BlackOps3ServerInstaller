@@ -15,6 +15,9 @@ if [ $1 == "ubuntu" ]; then
     sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/noble/winehq-noble.sources
     sudo apt update
     sudo apt install --install-recommends winehq-staging -y
+    #Retrieves SteamCMD
+    sudo add-apt-repository multiverse -y; sudo apt update
+    sudo apt install steamcmd -y
 fi
 
 if [ $1 == "debian" ]; then
@@ -24,11 +27,12 @@ if [ $1 == "debian" ]; then
     sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bookworm/winehq-bookworm.sources
     sudo apt update
     sudo apt install --install-recommends winehq-staging -y
+    #Retrieves SteamCMD
+    sudo apt install software-properties-common
+    sudo apt-add-repository non-free
+    sudo apt install steamcmd
 fi
 
-#Retrieves SteamCMD
-sudo add-apt-repository multiverse -y; sudo apt update
-sudo apt install steamcmd -y
 
 #Downloading server files
 current_dir=$(pwd)
