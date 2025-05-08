@@ -30,7 +30,7 @@ This repository merges configurations and scripts from these projects:\
 ## How to install on Linux (Ubuntu, Debian, Arch)
 Official BO3 servers only aimed for Windows support, but [Wine](https://www.winehq.org/) can help us run it on Linux too.
 1. Clone this repository wherever you want to install the server
-2. Make `server_files_downloader.sh` executable using `chmod +x` and execute it with `./server_files_downloader.sh ubuntu` (note, I currently support `ubuntu` and `debian` and `arch`). Example, if you're on arch just type `server_files_downloader.sh arch`
+2. Make `server_files_downloader.sh` executable using `chmod +x` and execute it with `./server_files_downloader.sh ubuntu` (note, I currently support `ubuntu` and `debian` and `arch`). Example, if you're on arch just type `./server_files_downloader.sh arch`
 3. Follow the setup "wizard" and confirm a bunch of wine required steps. Wait for server files to download through [steamcmd](https://developer.valvesoftware.com/wiki/SteamCMD)
 4. Wait for the custom client latest executable to download  (currently [T7X](https://forum.alterware.dev/t/how-to-install-the-t7x-client/1418/2))
 5. **(For Custom Clients)** Make `T7X_Server.sh` executable using `chmod +x`. Edit your `T7X_Server.sh` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
