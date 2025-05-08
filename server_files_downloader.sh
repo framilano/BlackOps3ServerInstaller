@@ -48,6 +48,7 @@ if [ "$1" == "arch" ]; then
     cd steamcmd
     makepkg -si
     cd ..
+    rm -rf steamcmd
 fi
 
 
