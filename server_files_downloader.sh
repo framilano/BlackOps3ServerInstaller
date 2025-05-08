@@ -1,4 +1,4 @@
-BoiiiUrl="https://github.com/Ezz-lol/boiii-free/releases/latest/download/boiii.exe"
+T7xUrl="https://master.bo3.eu/t7x/t7x.exe"
 
 #Updating stuff
 sudo apt update
@@ -8,12 +8,23 @@ sudo apt upgrade -y
 sudo apt install curl wget -y
 
 #WINE
-sudo dpkg --add-architecture i386
-sudo mkdir -pm755 /etc/apt/keyrings
-sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
-sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
-sudo apt update
-sudo apt install --install-recommends winehq-staging -y
+if [ $1 == "ubuntu" ]; then
+    sudo dpkg --add-architecture i386
+    sudo mkdir -pm755 /etc/apt/keyrings
+    sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+    sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/noble/winehq-noble.sources
+    sudo apt update
+    sudo apt install --install-recommends winehq-staging -y
+fi
+
+if [ $1 == "debian" ]; then
+    sudo dpkg --add-architecture i386
+    sudo mkdir -pm755 /etc/apt/keyrings
+    wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo gpg --dearmor -o /etc/apt/keyrings/winehq-archive.key -
+    sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bookworm/winehq-bookworm.sources
+    sudo apt update
+    sudo apt install --install-recommends winehq-staging -y
+fi
 
 #Retrieves SteamCMD
 sudo add-apt-repository multiverse -y; sudo apt update
@@ -31,5 +42,5 @@ cd UnrankedServer
 #rm -rf copydedicated.bat
 #rm -rf  Launch_Server.bat
 
-#downloading latest t7/boiii/bo3 client
-curl -L $BoiiiUrl -o boiii.exe
+#downloading latest t7x client
+curl -L $T7xUrl -o t7x.exe
