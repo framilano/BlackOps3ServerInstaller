@@ -7,10 +7,11 @@ sudo apt upgrade -y
 #Install curl and wget
 sudo apt install curl wget -y
 
-#WINE
+#WINE Stuff
+sudo dpkg --add-architecture i386
+sudo mkdir -pm755 /etc/apt/keyrings
+
 if [ $1 == "ubuntu" ]; then
-    sudo dpkg --add-architecture i386
-    sudo mkdir -pm755 /etc/apt/keyrings
     sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
     sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/noble/winehq-noble.sources
     sudo apt update
@@ -21,8 +22,6 @@ if [ $1 == "ubuntu" ]; then
 fi
 
 if [ $1 == "debian" ]; then
-    sudo dpkg --add-architecture i386
-    sudo mkdir -pm755 /etc/apt/keyrings
     wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo gpg --dearmor -o /etc/apt/keyrings/winehq-archive.key -
     sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bookworm/winehq-bookworm.sources
     sudo apt update
