@@ -1,6 +1,6 @@
 T7xUrl="https://master.bo3.eu/t7x/t7x.exe"
 
-if [ "$1" == "ubuntu" ] || [ $1 == "debian" ]; then
+if [ "$1" == "ubuntu" ] || [ "$1" == "debian" ]; then
     #Updating stuff
     sudo apt update
     sudo apt upgrade -y
