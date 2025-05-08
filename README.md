@@ -38,6 +38,19 @@ Official BO3 servers only aimed for Windows support, but [Wine](https://www.wine
 7. **(For official servers on vanilla BO3)** Launch your server using `Launch_Server.sh`
 5. Done!
 
+## How to install (Linux, tested on Debian 12.10)
+Official BO3 servers only aimed for Windows support, but [Wine](https://www.winehq.org/) can help us run it on Linux too.
+1. Clone this repository wherever you want to install the server
+2. Make `server_files_downloader_debian.sh` executable using `chmod +x` and execute it with `./server_files_downloader_debian.sh`
+3. Follow the setup "wizard" and confirm a bunch of wine required steps. Wait for server files to download through [steamcmd](https://developer.valvesoftware.com/wiki/SteamCMD)
+4. Wait for the custom client latest executable to download  (currently [EZZ BOIII](https://forum.ezz.lol/category/7/boiii))
+5. **(For Custom Clients like BOIII)** Make `BOIII_Server.sh` executable using `chmod +x`. Edit your `BOIII_Server.sh` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
+6. **(For Custom Clients like BOIII)** Launch your server using `BOIII_Server.sh`
+7. **(For official servers on vanilla BO3)** Launch your server using `Launch_Server.sh`
+5. Done!
+
+
+
 ## Cool, but Zombies?
 The default server files only download MP-ready stuff. To serve a Zombies server you need to copy these fast files
 from your BO3 game files and put them into `zone`:
