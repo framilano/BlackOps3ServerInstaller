@@ -21,7 +21,7 @@ This repository merges configurations and scripts from these projects:\
 1. Clone this repository wherever you want to install the server
 2. Double click on `server_files_downloader.bat`
 3. Wait for server files to download through [steamcmd](https://developer.valvesoftware.com/wiki/SteamCMD)
-4. Wait for the custom client latest executable to download  (currently [EZZ T7X](https://forum.ezz.lol/category/7/t7x))
+4. Wait for the custom client latest executable to download  (currently [T7X](https://forum.alterware.dev/t/how-to-install-the-t7x-client/1418/2))
 5. **(For Custom Clients like T7X)** You can now edit `T7X_Server.bat` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
 6. **(For Custom Clients like T7X)** Launch your server using `T7X_Server.bat`
 7. **(For official servers on vanilla BO3)** Launch your server using `Launch_Server.bat`
