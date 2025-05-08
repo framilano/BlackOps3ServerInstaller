@@ -28,9 +28,9 @@ if [ $1 == "debian" ]; then
     sudo apt update
     sudo apt install --install-recommends winehq-staging -y
     #Retrieves SteamCMD
-    sudo apt install software-properties-common
-    sudo apt-add-repository non-free
-    sudo apt install steamcmd
+    sudo apt install software-properties-common -y
+    sudo apt-add-repository non-free -y
+    sudo apt install steamcmd -y
 fi
 
 
