@@ -11,8 +11,8 @@ This repository merges configurations and scripts from these projects:\
 **You can create servers on both Linux-based platforms and Windows.**
 
 ## Table of Contents  
-- [How to install(Windows)](#how-to-install-windows)
-- [How to install(Linux)](#how-to-install-linux)
+- [How to install on Windows](#how-to-install-windows)
+- [How to install on Linux (Ubuntu, Debian, Arch)](#how-to-install-linux)
 - [Cool, but Zombies?](#cool-but-zombies)
 - [Mods?](#mods)
 - [Custom Maps?](#custom-maps)
