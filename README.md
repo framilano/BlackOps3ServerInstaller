@@ -69,7 +69,16 @@ Now modify the `set ModFolderName=` in `T7X_Server.bat` into `set ModFolderName=
 
 ## Custom Maps?
 This section will explain how to load custom maps downloaded from the Steam Workshop.
-Let's say you downloaded the [Mob of the Dead](https://steamcommunity.com/sharedfiles/filedetails/?id=3373649394) custom map and want to host a server with it, create the usermaps folder on the root of your server folder (in UnrankedServer) and create a folder within it called zm_prison (the map codename, easily "detectable" from the map gamefiles), put all map files inside zm_prison 
+Let's say you downloaded the [Mob of the Dead](https://steamcommunity.com/sharedfiles/filedetails/?id=3373649394) custom map and want to host a server with it, create the `usermaps` folder on the root of your server folder (in UnrankedServer) and create a folder within it called `zm_prison` (the map codename, easily "detectable" from the map gamefiles), put all map files inside this folder.
+
+![Screenshot_2025-05-10_22-47-36](https://github.com/user-attachments/assets/002f790f-9843-4288-8fb4-67c929bb4f61)
+
+Edit `server_zm.cfg` and add in map rotation `zm_prison`
+
+![Screenshot_2025-05-10_22-48-31](https://github.com/user-attachments/assets/6267c713-6a9e-4c53-a493-d256aba5a85c)
+
+That's it
+
 
 ## Notes
 1. Unless you're playing LAN with friends, you need to port forward you router and open the ports used by your server in Windows Firewall.
