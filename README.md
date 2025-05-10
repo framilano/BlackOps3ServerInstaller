@@ -67,6 +67,10 @@ Let's say you subscribed to the [The Kermit Mod](https://steamcommunity.com/shar
 
 Now modify the `set ModFolderName=` in `T7X_Server.bat` into `set ModFolderName=1638465081`, that's it, you're done!
 
+## Custom Maps?
+This section will explain how to load custom maps downloaded from the Steam Workshop.
+Let's say you downloaded the [Mob of the Dead](https://steamcommunity.com/sharedfiles/filedetails/?id=3373649394) custom map and want to host a server with it, create the usermaps folder on the root of your server folder (in UnrankedServer) and create a folder within it called zm_prison (the map codename, easily "detectable" from the map gamefiles), put all map files inside zm_prison 
+
 ## Notes
 1. Unless you're playing LAN with friends, you need to port forward you router and open the ports used by your server in Windows Firewall.
 2. If you don't need any custom client, just delete `t7x.exe`.
