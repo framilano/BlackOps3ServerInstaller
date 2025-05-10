@@ -1,6 +1,6 @@
 # BlackOps3ServerInstaller
 
-Simplifying BO3 server installation for both vanilla BO3 and unofficial clients (like T7X). \
+Simplifying BO3 server installation for both vanilla BO3 and unofficial clients (like T7X or BOIII). \
 **No copyrighted files are distributed using these scripts.** \
 \
 This repository merges configurations and scripts from these projects:\
@@ -29,7 +29,7 @@ This repository merges configurations and scripts from these projects:\
 
 ## How to install on Linux (Ubuntu, Debian, Arch)
 Official BO3 servers only aimed for Windows support, but [Wine](https://www.winehq.org/) can help us run it on Linux too.
-1. Clone this repository wherever you want to install the server
+1. Clone this repository wherever you want to install the server, we assume you're using T7X, but all these scripts are easily rewritable for BOIII
 2. Make `server_files_downloader.sh` executable using `chmod +x` and execute it with `./server_files_downloader.sh ubuntu` (note, I currently support `ubuntu`, `debian` and `arch`). Example, if you're on arch just type `./server_files_downloader.sh arch`
 3. Follow the setup "wizard" and confirm a bunch of wine required steps. Wait for server files to download through [steamcmd](https://developer.valvesoftware.com/wiki/SteamCMD)
 4. Wait for the custom client latest executable to download  (currently [T7X](https://forum.alterware.dev/t/how-to-install-the-t7x-client/1418/2))
