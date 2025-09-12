@@ -46,6 +46,7 @@ from your BO3 game files and put them into `zone`:
 ```
 zone/en_zm_patch.ff
 zone/en_zm_common.ff
+zone/en_zm_levelcommon.ff
 zone/zm_patch.ff
 zone/zm_common.fd
 zone/zm_common.ff
