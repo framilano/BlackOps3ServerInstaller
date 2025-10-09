@@ -89,4 +89,4 @@ That's it
 3. Remember to change the port in `CustomClient_Server.bat` if you're launching the server in the same machine where you're playing Black Ops 3.
 4. To save space, you can delete any unused fast files in `UnrankedServer/zone`
 5. **(For Custom Clients)** To customise your server maps rotation and gamemodes just edit the files in `UnrankedServer/zone`, `server_zm.cfg` changes zombies configuration, `server.cfg` changes multiplayer configurations, `server_cp.cfg` changes coop campaign configuration.
-These files can be executed even with the vanilla `Launch_Server.bat` or `Launch_Server.sh` but you need to edit it first to execute the desired cfg file.
+These files can be executed even with the vanilla `Launch_Server.bat` or `Launch_Server.sh` but you need to edit these first to execute the desired .cfg file.
