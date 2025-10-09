@@ -1,5 +1,6 @@
 set "SteamcmdUrl=https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip"
 set "T7XUrl=https://master.bo3.eu/t7x/t7x.exe"
+set "EZZBOIIIUrl=https://github.com/Ezz-lol/boiii-free/releases/latest/download/boiii.exe"
 
 ::Retrieves SteamCMD
 curl -s "%SteamcmdUrl%" -o steamcmd.zip
@@ -23,3 +24,4 @@ cd UnrankedServer
 
 ::downloading latest t7/boiii/bo3 client
 curl -L "%T7XUrl%" -o t7x.exe
+curl -L "%EZZBOIIIUrl%" -o boiii.exe

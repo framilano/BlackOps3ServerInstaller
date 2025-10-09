@@ -1,10 +1,11 @@
 # BlackOps3ServerInstaller
 
-Simplifying BO3 server installation for both vanilla BO3 and unofficial clients (like T7X or BOIII). \
+Simplifying Black Ops 3 server installation for both Steam Black Ops 3 and Custom Clients (like T7X or BOIII). \
 **No copyrighted files are distributed using these scripts.** \
 \
 This repository merges configurations and scripts from these projects:\
-[T7X](https://forum.alterware.dev/t/how-to-install-the-t7x-client/1418/2) (currently the best custom client) \
+[T7X](https://forum.alterware.dev/t/how-to-install-the-t7x-client/1418/2)\
+[EZZBOIII](https://forum.ezz.lol/topic/5/bo3-guide)\
 [T7 Configuration files](https://github.com/Dss0/t7-server-config)\
 [BOIIIEasyServer](https://github.com/rcv11x/BOIIIEasyServer)
 
@@ -22,20 +23,20 @@ This repository merges configurations and scripts from these projects:\
 1. Clone this repository wherever you want to install the server
 2. Double click on `server_files_downloader.bat`
 3. Wait for server files to download through [steamcmd](https://developer.valvesoftware.com/wiki/SteamCMD)
-4. Wait for the custom client latest executable to download  (currently [T7X](https://forum.alterware.dev/t/how-to-install-the-t7x-client/1418/2))
-5. **(For Custom Clients)** You can now edit `T7X_Server.bat` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
-6. **(For Custom Clients)** Launch your server using `T7X_Server.bat`
+4. Wait for the custom clients executable to download  (currently [T7X](https://forum.alterware.dev/t/how-to-install-the-t7x-client/1418/2) or [EZZBOIII](https://forum.ezz.lol/topic/5/bo3-guide))
+5. **(For Custom Clients)** You can now edit `CustomClient_Server.bat` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
+6. **(For Custom Clients)** Launch your server using `CustomClient_Server.bat boiii` if you want to use EZBOIII or `CustomClient_Server.bat t7x` if you want to use T7X
 7. **(For official servers on vanilla BO3)** Launch your server using `Launch_Server.bat`
 5. Done!
 
 ## How to install on Linux (Ubuntu, Debian, Arch)
 Official BO3 servers only aimed for Windows support, but [Wine](https://www.winehq.org/) can help us run it on Linux too.
-1. Clone this repository wherever you want to install the server, we assume you're using T7X, but all these scripts are easily rewritable for BOIII
+1. Clone this repository wherever you want to install the server
 2. Make `server_files_downloader.sh` executable using `chmod +x` and execute it with `./server_files_downloader.sh ubuntu` (note, I currently support `ubuntu`, `debian` and `arch`). Example, if you're on arch just type `./server_files_downloader.sh arch`
 3. Follow the setup "wizard" and confirm a bunch of wine required steps. Wait for server files to download through [steamcmd](https://developer.valvesoftware.com/wiki/SteamCMD)
-4. Wait for the custom client latest executable to download  (currently [T7X](https://forum.alterware.dev/t/how-to-install-the-t7x-client/1418/2))
-5. **(For Custom Clients)** Make `T7X_Server.sh` executable using `chmod +x`. Edit your `T7X_Server.sh` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
-6. **(For Custom Clients)** Launch your server using `T7X_Server.sh` (note, inside this script on the `wine` line there's the `-headless` argument that must be used if you don't any graphical interface, do not use it if you have a DE)
+4. Wait for the custom clients executable to download  (currently [T7X](https://forum.alterware.dev/t/how-to-install-the-t7x-client/1418/2) or [EZZBOIII](https://forum.ezz.lol/topic/5/bo3-guide))
+5. **(For Custom Clients)** Make `CustomClient_Server.sh` executable using `chmod +x`. Edit your `CustomClient_Server.sh` and `zone/server.cfg` (or `zone/server_cp.cfg` or `zone/server_zm.cfg`) with your desired settings
+6. **(For Custom Clients)** Launch your server using `CustomClient_Server.sh boiii` if you want to use EZBOIII or `CustomClient_Server.sh t7x` if you want to use T7X
 7. **(For official servers on vanilla BO3)** Launch your server using `Launch_Server.sh`
 5. Done!
 
@@ -67,7 +68,7 @@ Let's say you subscribed to the [The Kermit Mod](https://steamcommunity.com/shar
 
 ![immagine](https://github.com/user-attachments/assets/23843aca-0bd8-4dbc-8cfe-8dba4eba12c0)
 
-Now modify the `set ModFolderName=` in `T7X_Server.bat` into `set ModFolderName=1638465081`, that's it, you're done!
+Now modify the `set ModFolderName=` in `CustomClient_Server.bat` into `set ModFolderName=1638465081`, that's it, you're done!
 
 ## Custom Maps?
 This section will explain how to load custom maps downloaded from the Steam Workshop.
@@ -84,8 +85,8 @@ That's it
 
 ## Notes
 1. Unless you're playing LAN with friends, you need to port forward you router and open the ports used by your server in Windows Firewall.
-2. If you don't need any custom client, just delete `t7x.exe`.
-3. Remember to change the port in `T7X_Server.bat` if you're launching the server in the same machine where you're playing Black Ops 3.
+2. If you don't need any custom client, just delete `t7x.exe` or `boiii.exe`.
+3. Remember to change the port in `CustomClient_Server.bat` if you're launching the server in the same machine where you're playing Black Ops 3.
 4. To save space, you can delete any unused fast files in `UnrankedServer/zone`
 5. **(For Custom Clients)** To customise your server maps rotation and gamemodes just edit the files in `UnrankedServer/zone`, `server_zm.cfg` changes zombies configuration, `server.cfg` changes multiplayer configurations, `server_cp.cfg` changes coop campaign configuration.
-These files can be executed even with the vanilla `Launch_Server.bat` but you need to edit it first to execute the desired cfg file.
+These files can be executed even with the vanilla `Launch_Server.bat` or `Launch_Server.sh` but you need to edit it first to execute the desired cfg file.

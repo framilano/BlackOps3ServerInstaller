@@ -1,4 +1,5 @@
 T7xUrl="https://master.bo3.eu/t7x/t7x.exe"
+EZBOIIIUrl="https://github.com/Ezz-lol/boiii-free/releases/latest/download/boiii.exe"
 
 if [ "$1" == "ubuntu" ] || [ "$1" == "debian" ]; then
     #Updating stuff
@@ -64,5 +65,6 @@ cd UnrankedServer
 #rm -rf copydedicated.bat
 #rm -rf  Launch_Server.bat
 
-#downloading latest t7x client
+#downloading latest t7x/boiii client
 curl -L $T7xUrl -o t7x.exe
+curl -L $EZBOIIIUrl -o boiii.exe

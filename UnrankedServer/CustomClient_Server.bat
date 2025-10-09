@@ -31,8 +31,14 @@ set ModIdNumber=
 
 set ServerFilename=server.cfg
 
+:://///////////////////////////////////////////////////////////////////////
+::// 	        Your custom client name goes here.                       //
+:://	        You must pass it when launching the executable           //
+:://///////////////////////////////////////////////////////////////////////
+set CustomClient=%1.exe
+
 ::///////////////////////////////////////////////////////////////////////
 :://DONE!! WARNING! Don't mess with anything below this line. SERIOUSLY!//
 ::///////////////////////////////////////////////////////////////////////
 
-start t7x.exe -headless +set fs_game "%ModIdNumber%" +set net_port "%GamePort%"  +set logfile 2 +exec %ServerFilename%
+start %CustomClient% -headless +set fs_game "%ModIdNumber%" +set net_port "%GamePort%"  +set logfile 2 +exec %ServerFilename%

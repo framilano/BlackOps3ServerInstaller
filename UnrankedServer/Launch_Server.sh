@@ -1,0 +1,2 @@
+# Copy of Launch_Server.bat retrieved for Steam, just added its Linux/bash counterpart
+wine BlackOps3_UnrankedDedicatedServer.exe +set fs_game usermaps +set logfile 2 +set live_steam_server_name "Test Server" +set live_steam_server_description "This is a test server." +set live_steam_server_password "test" +rcon_password "test"

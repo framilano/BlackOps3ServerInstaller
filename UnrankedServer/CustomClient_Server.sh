@@ -24,7 +24,12 @@ ModIdNumber=
 #//                     for the campaign coop                           //     
 #/////////////////////////////////////////////////////////////////////////
 ServerFilename=server.cfg
+#/////////////////////////////////////////////////////////////////////////
+#// 	        Your custom client name goes here.                      //
+#//	        You must pass it when launching the executable              //
+#/////////////////////////////////////////////////////////////////////////
+CustomClient="$1.exe"
 #///////////////////////////////////////////////////////////////////////
 #//DONE!! WARNING! Don't mess with anything below this line. SERIOUSLY!//
 #///////////////////////////////////////////////////////////////////////
-wine t7x.exe -headless +set fs_game "$ModIdNumber" +set net_port "$GamePort" +set logfile 2 +exec $ServerFilename
+wine $CustomClient -headless +set fs_game "$ModIdNumber" +set net_port "$GamePort" +set logfile 2 +exec $ServerFilename
