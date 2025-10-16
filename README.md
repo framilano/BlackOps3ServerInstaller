@@ -11,6 +11,8 @@ This repository merges configurations and scripts from these projects:\
 
 **You can create servers on both Linux-based platforms and Windows.**
 
+**There doesn't seem to be a way to run zombies server using the official BO3 Server Launcher. Currently zombies servers are only available using custom clients**
+
 ## Table of Contents  
 - [How to install on Windows](#how-to-install-windows)
 - [How to install on Linux (Ubuntu, Debian, Arch)](#how-to-install-linux)
