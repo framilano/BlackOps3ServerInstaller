@@ -16,6 +16,7 @@ This repository merges configurations and scripts from these projects:\
 ## Table of Contents  
 - [How to install on Windows](#how-to-install-windows)
 - [How to install on Linux (Ubuntu, Debian, Arch)](#how-to-install-linux)
+- [EZZBOIII additional step](#ezzboiii-additional-step)
 - [Cool, but Zombies?](#cool-but-zombies)
 - [Mods?](#mods)
 - [Custom Maps?](#custom-maps)
@@ -41,6 +42,11 @@ Official BO3 servers only aimed for Windows support, but [Wine](https://www.wine
 6. **(For Custom Clients)** Launch your server using `CustomClient_Server.sh boiii` if you want to use EZBOIII or `CustomClient_Server.sh t7x` if you want to use T7X
 7. **(For official servers on vanilla BO3)** Launch your server using `Launch_Server.sh`
 5. Done!
+
+## EZZBOIII additiona step
+BOIII requires some additional files in your `%APPDATA%/Local` folder to create a new server. Extract `boiii-server-files.zip` and move the boiii folder:
+- Windows: in your %APPDATA%/Local folder
+- Linux: open your wine prefix and copy the `boiii` folder in `AppData/Local` folder present in it
 
 ## Cool, but Zombies?
 The default server files only download MP-ready stuff. To serve a Zombies server you need to copy these fast files
