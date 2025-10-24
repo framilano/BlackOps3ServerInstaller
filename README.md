@@ -1,5 +1,8 @@
 # BlackOps3ServerInstaller
 
+<img width="3840" height="1240" alt="6534a8436e907efb0ced99edd8d02435" src="https://github.com/user-attachments/assets/f40d08e8-6285-423f-baf2-ddb873ed4301" />
+
+
 Simplifying Black Ops 3 server installation for both Steam Black Ops 3 and Custom Clients (like T7X or BOIII). \
 **No copyrighted files are distributed using these scripts.** \
 \
@@ -14,9 +17,9 @@ This repository merges configurations and scripts from these projects:\
 **There doesn't seem to be a way to run zombies server using the official BO3 Server Launcher. Currently zombies servers are only available using custom clients**
 
 ## Table of Contents  
-- [How to install on Windows](#how-to-install-windows)
-- [How to install on Linux (Ubuntu, Debian, Arch)](#how-to-install-linux)
-- [EZZBOIII additional step](#ezzboiii-additional-step)
+- [How to install on Windows](#how-to-install-on-windows)
+- [How to install on Linux (Ubuntu, Debian, Arch)](#how-to-install-on-linux-ubuntu-debian-arch)
+- [EZZBOIII Server Additional Steps](#ezzboiii-server-additional-steps)
 - [Cool, but Zombies?](#cool-but-zombies)
 - [Mods?](#mods)
 - [Custom Maps?](#custom-maps)
@@ -43,13 +46,13 @@ Official BO3 servers only aimed for Windows support, but [Wine](https://www.wine
 7. **(For official servers on vanilla BO3)** Launch your server using `Launch_Server.sh`
 5. Done!
 
-## EZZBOIII additiona step
-BOIII requires some additional files in your `%APPDATA%/Local` folder to create a new server. Extract `boiii-server-files.zip` and move the boiii folder:
-- Windows: in your %APPDATA%/Local folder
+## EZZBOIII Server Additional Steps
+EZZBOIII requires some additional files in your `%APPDATA%/Local` folder to create a new server. Extract [`boiii-server-files.zip`](https://github.com/framilano/BlackOps3ServerInstaller/blob/main/boiii-server-files.zip) and move the extracted `boiii` folder:
+- Windows: in your `%APPDATA%/Local` folder
 - Linux: open your wine prefix and copy the `boiii` folder in `AppData/Local` folder present in it
 
 ## Cool, but Zombies?
-The default server files only download MP-ready stuff. To serve a Zombies server you need to copy these fast files
+The default server files only downloads MP-ready stuff. To serve a Zombies server you need to copy these fast files
 from your BO3 game files and put them into `zone`:
 
 ```
@@ -72,7 +75,7 @@ zone/zm_zod_patch.ff
 
 ## Mods?
 There's a difference between Custom Maps and Mods, this section will explain how to load a mod downloaded from the Steam Workshop.
-Let's say you subscribed to the [The Kermit Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=1638465081), this will create a folder in your Steam folder in `steamapps/workshop/content/311210/1638465081`, create a new `mods` folder inside your BO3 Server installation folder and simply copy the folder named `1638465081` (this number changes depending on the mod) inside it. The resulting folders structure should look like this:
+Let's say you subscribed to the [The Kermit Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=1638465081), this will create a folder in your Steam folder in `steamapps/workshop/content/311210/1638465081`, create a new `mods` folder inside the root of your server folder (in UnrankedServer) and copy the folder named `1638465081` (this number changes depending on the mod) inside it. The resulting folders structure should look like this:
 
 ![immagine](https://github.com/user-attachments/assets/23843aca-0bd8-4dbc-8cfe-8dba4eba12c0)
 
@@ -80,13 +83,13 @@ Now modify the `set ModFolderName=` in `CustomClient_Server.bat` into `set ModFo
 
 ## Custom Maps?
 This section will explain how to load custom maps downloaded from the Steam Workshop.
-Let's say you downloaded the [Mob of the Dead](https://steamcommunity.com/sharedfiles/filedetails/?id=3373649394) custom map and want to host a server with it, create the `usermaps` folder on the root of your server folder (in UnrankedServer) and create a folder within it called `zm_prison` (the map codename, easily guess the name from the map gamefiles), put all map files inside this folder.
+Let's say you downloaded the [Mob of the Dead](https://steamcommunity.com/sharedfiles/filedetails/?id=3373649394) custom map and want to host a server with it, create the `usermaps` folder inside the root of your server folder (in UnrankedServer) and create a folder within it called `zm_prison` (the map codename, easily guess the name from the map gamefiles), put all map files inside this folder.
 
 ![Screenshot_2025-05-10_22-47-36](https://github.com/user-attachments/assets/002f790f-9843-4288-8fb4-67c929bb4f61)
 
 Edit `server_zm.cfg` and add in map rotation `zm_prison`
 
-![Screenshot_2025-05-10_22-48-31](https://github.com/user-attachments/assets/6267c713-6a9e-4c53-a493-d256aba5a85c)
+`set sv_maprotation "gametype zclassic map zm_prison"`
 
 That's it
 
