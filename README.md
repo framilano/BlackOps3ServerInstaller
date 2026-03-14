@@ -101,3 +101,4 @@ That's it
 4. To save space, you can delete any unused fast files in `UnrankedServer/zone`
 5. **(For Custom Clients)** To customise your server maps rotation and gamemodes just edit the files in `UnrankedServer/zone`, `server_zm.cfg` changes zombies configuration, `server.cfg` changes multiplayer configurations, `server_cp.cfg` changes coop campaign configuration.
 These files can be executed even with the vanilla `Launch_Server.bat` or `Launch_Server.sh` but you need to edit these first to execute the desired .cfg file.
+6. If you're trying to host on a Linux ARM64 machine, you should check out [Hangover](https://github.com/AndreRH/hangover), pair it with wine and you're done!
